@@ -1,0 +1,110 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id=title>Jam Survey Form</h1>
+
+<p id="description"> We want to know your opinion to improve our Jam! </p>
+
+<form id="survey-form"> 
+    <label id="name-label"
+          for="name">Name:</lab><br>
+        <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="Enter your name"
+            required><br>
+  <label id="email-label"
+         for="email">Email:</label><br>
+        <input 
+            type="email"
+            id="email" 
+            name="email"
+            placeholder="Enter your email"
+            required><br>
+   <label id="number-label"
+          for="number">Phone Number:</label><br>
+        <input 
+            type="number" 
+            id="number" 
+            name="number"
+            min="0000000000"
+            max="9999999999"
+            pattern="00000000000"   
+            placeholder="Enter your phone number" required><br>
+  
+      <p>
+        What flavors would you prefer?
+      </p>
+      <select 
+              id="dropdown"
+              required>
+        <option disabled selected value>Select an option</option>
+        <option value="tomato">Tomato with pepper</option>
+        <option value="apricot">Apricot with orange</option>
+        <option value="kiwi">Kiwi</option>
+        <option value="passion_fruit">Passion Fruit with mango</option>
+      </select>
+  
+     <p>
+        What do you prefer?
+        <span class="clue">
+      </p>
+      <label>
+        <input
+          name="prefer"
+          value="jams"
+          type="radio"
+        />Sweet Jams
+        <br>
+     </label> 
+  
+        <label>
+        <input
+          name="prefer"
+          value="jams"
+          type="radio"
+        />Jams with pepper
+        <br>
+     </label> 
+
+   <p>
+        What would you like to see diffetent from what existis in the market?(Check all that apply)</span>
+      </p>
+      <label>
+        <input
+          name="prefer"
+          value="jams"
+          type="checkbox"
+          class="input-checkbox"
+        />Free sugar Jams
+        <br>
+     </label>
+        <input
+          name="prefer"
+          value="flavors"
+          type="checkbox"
+          class="input-checkbox"
+        />Different Flavors
+     </label>
+     <br>
+     </label>
+        <input
+          name="prefer"
+          value="basket"
+          type="checkbox"
+          class="input-checkbox"
+        />A basket with jams, toasts and yogurt
+     </label>
+
+      <p>Comments and suggestions?</p>
+      <textarea
+        id="comments"
+        name="comment"
+        placeholder="Comment here"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
